@@ -21,6 +21,9 @@ Mỗi bước di chuyển có chi phí bằng 1, vì bài toán ưu tiên tìm �
 * Giải pháp
 Dãy các trạng thái từ trạng thái ban đầu đến trạng thái mục tiêu, được tạo ra bởi các thuật toán tìm kiếm không có thông tin BFS, DFS, UCS, và IDS.
 Hình ảnh thuật toán cùn biểu đồ biểu diễn
+![image](https://github.com/user-attachments/assets/e1a81399-f533-4166-bb98-4a7835344124)
+
+
 Nhận xét
 
 * BFS (Breadth-First Search): Thuật toán khám phá theo chiều rộng có thể tiêu tốn nhiều bộ nhớ, đặc biệt khi không gian trạng thái lớn, do phải lưu trữ tất cả các trạng thái ở mỗi mức.
@@ -46,6 +49,8 @@ Mỗi bước di chuyển có chi phí bằng 1, vì bài toán ưu tiên tìm �
 * Giải pháp
 Dãy các trạng thái từ trạng thái ban đầu đến trạng thái mục tiêu, được tạo ra bởi các thuật toán tìm kiếm có thông tin GBFS, A*, và IDA*.
 Hình ảnh từng thuật toán cùng biểu đồ so sánh hiệu suất
+![Screenshot 2025-05-18 214927](https://github.com/user-attachments/assets/e5b1fc31-4940-44b3-b6d3-e5403eac047b)
+
 
 Nhóm 2
 
@@ -73,7 +78,8 @@ Di chuyển ô trống lên, xuống, trái, phải để hoán đổi với ô 
 Mỗi bước di chuyển có chi phí bằng 1, vì bài toán ưu tiên tìm đường đi ngắn nhất.
 * Giải pháp
 Dãy các trạng thái từ trạng thái ban đầu đến trạng thái mục tiêu, được tạo ra bởi các thuật toán tìm kiếm cục bộ Simple Hill Climbing (SHC), Steepest Ascent Hill Climbing (SAHC), Random Hill Climbing (RHC), Simulated Annealing (SA), Beam Search (BS), và Genetic Algorithm (GA).
-Hình ảnh gif từng thuật toán cùng biểu đồ so sánh hiệu suất
+Hình ảnh thuật toán cùng biểu đồ so sánh hiệu suất
+![Screenshot 2025-05-18 215110](https://github.com/user-attachments/assets/4774495f-6764-4626-96ba-bb0817404345)
 
 Nhóm 3
 
@@ -109,6 +115,7 @@ Mỗi bước di chuyển có chi phí bằng 1, vì bài toán ưu tiên tìm �
 * Giải pháp
 Dãy các trạng thái từ trạng thái ban đầu đến trạng thái mục tiêu, được tạo ra bởi các thuật toán AND-OR Search, Belief State Search, và Partial Observable Search (POS). Các thuật toán này duy trì tập belief states và tìm kiếm đường dẫn để tất cả trạng thái trong belief state đạt mục tiêu.
 Hình ảnh từng thuật toán cùng biểu đồ so sánh hiệu suất
+![Screenshot 2025-05-18 215838](https://github.com/user-attachments/assets/6ff1f04a-bb90-49d7-a13c-ac198ff6f35f)
 
 Nhận xét
 
@@ -142,6 +149,7 @@ Bài toán không tập trung vào khái niệm chi phí, nó ưu tiên tìm m�
 * Giải pháp
 Dãy các trạng thái từ trạng thái rỗng đến trạng thái mục tiêu, được tạo ra bởi các thuật toán Backtracking Search, Forward Checking Search, và Min-Conflicts Search. Các thuật toán này đảm bảo trạng thái cuối cùng thỏa mãn tất cả ràng buộc và khớp với mục tiêu.
 Hình ảnh từng thuật toán cùng biểu đồ so sánh hiệu suất
+![Screenshot 2025-05-18 215224](https://github.com/user-attachments/assets/025462e2-e1a0-4e22-bde7-8e579efd8462)
 
 Nhóm 5
 
@@ -171,6 +179,7 @@ Trong thuật toán này chi phí được hiểu cách khác là phần thưở
 * Giải pháp
 Một dãy các trạng thái từ trạng thái ban đầu đến trạng thái mục tiêu, được tạo ra bởi thuật toán Q-Learning. Thuật toán học chính sách tối ưu bằng cách cập nhật bảng Q (Q-table) dựa trên phần thưởng, sau đó trích xuất đường đi từ bảng Q đã học.
 Hình ảnh từng thuật toán cùng biểu đồ so sánh hiệu suất
+![image](https://github.com/user-attachments/assets/23b5f888-9c6e-4cde-9dab-64b9bda75b66)
 
 Nhóm 6
 
