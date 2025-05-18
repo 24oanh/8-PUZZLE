@@ -1,10 +1,10 @@
-#Giới thiệu bài toán 8_puzzle
+# Giới thiệu bài toán 8_puzzle
 8-Puzzle Solver là một đồ án phần mềm giải bài toán 8-Puzzle (trò chơi xếp ô số 3x3) được phát triển bằng Python, sử dụng Pygame cho giao diện người dùng và Plotly để trực quan hóa hiệu suất. Chương trình tích hợp 20 thuật toán tìm kiếm để giải bài toán và so sánh hiệu suất.
 #1. Mục tiêu
 Mục tiêu cốt lõi của dự án là xây dựng một chương trình toàn diện và linh hoạt để giải quyết bài toán 8-puzzle – một bài toán kinh điển và nền tảng trong lĩnh vực trí tuệ nhân tạo cũng như khoa học máy tính – thông qua việc tích hợp nhiều thuật toán đa dạng và tiên tiến, từ các phương pháp tìm kiếm truyền thống đến các kỹ thuật học tăng cường hiện đại. Dự án không chỉ dừng lại ở việc tạo ra một công cụ đơn thuần để tìm lời giải cho bài toán, mà còn đặt trọng tâm vào việc thiết kế một nền tảng mạnh mẽ, hỗ trợ nghiên cứu chuyên sâu, học tập thực tiễn, và khám phá các cách tiếp cận khác nhau trong việc giải quyết các vấn đề phức tạp của trí tuệ nhân tạo, từ đó mang lại giá trị giáo dục và thực tiễn cho người dùng.
-#2. Nội dung
+# 2. Nội dung
 
-##2.1 Nhóm thuật toán tìm kiếm không có thông tin (Uninformed Search Algorithms)
+## 2.1 Nhóm thuật toán tìm kiếm không có thông tin (Uninformed Search Algorithms)
 Các thành phần chính của bài toán tìm kiếm và giải pháp
 
 Trạng thái ban đầu
@@ -29,7 +29,7 @@ IDS (Iterative Deepening Search): Kết hợp ưu điểm của BFS và DFS, IDS
 Kết luận
 IDS thường nổi bật nhờ khả năng cân bằng giữa bộ nhớ và hiệu quả tìm kiếm, phù hợp với bài toán 8-Puzzle.
 DFS có thể kém hiệu quả nhất trong nhóm này, do không đảm bảo tìm được đường đi ngắn nhất và dễ bị kẹt ở các nhánh sâu.
-##2.2 Nhóm thuật toán tìm kiếm có thông tin (Informed Search Algorithms)
+## 2.2 Nhóm thuật toán tìm kiếm có thông tin (Informed Search Algorithms)
 Các thành phần chính của bài toán tìm kiếm và giải pháp
 
 Trạng thái ban đầu
@@ -57,7 +57,7 @@ Kết luận
 
 IDA* nổi bật về tốc độ và tiết kiệm bộ nhớ, nhưng số trạng thái khám phá cao hơn dự kiến cho thấy cần cải thiện heuristic để giảm số lần lặp.
 GBFS phù hợp khi ưu tiên tốc độ, nhưng không đảm bảo đường đi tối ưu, trong khi A* là lựa chọn tốt nhất nếu cần đảm bảo tính tối ưu cho bài toán.
-##2.3 Nhóm thuật toán tìm kiếm cục bộ (Local Optimization Algorithms)
+## 2.3 Nhóm thuật toán tìm kiếm cục bộ (Local Optimization Algorithms)
 Các thành phần chính của bài toán tìm kiếm và giải pháp
 
 Trạng thái ban đầu
@@ -90,7 +90,7 @@ GA hiệu quả trong việc khám phá không gian trạng thái rộng, nhưng
 SA là lựa chọn cân bằng, với khả năng thoát cực trị cục bộ, phù hợp cho bài toán 8-Puzzle khi cần hiệu suất tốt hơn HC.
 BS nhanh hơn SA và GA, nhưng có thể bỏ sót giải pháp nếu beam_width quá nhỏ.
 Nhóm HC (SHC, SAHC, RHC) nhanh và tiết kiệm tài nguyên, nhưng dễ mắc kẹt ở cực trị cục bộ, trong đó SHC nhanh nhất nhưng kém hiệu quả nhất về khả năng tìm giải pháp tối ưu.
-##2.4 Nhóm thuật toán tìm kiếm trong môi trường phức tạp (Search in complex environments)
+## 2.4 Nhóm thuật toán tìm kiếm trong môi trường phức tạp (Search in complex environments)
 Các thành phần chính của bài toán tìm kiếm và giải pháp
 
 Trạng thái ban đầu
@@ -121,7 +121,7 @@ Kết luận
 POS là lựa chọn tốt nhất trong nhóm khi cần cân bằng giữa thời gian chạy và không gian trạng thái, nhờ quan sát giúp loại bỏ trạng thái không phù hợp và thu hẹp belief state hiệu quả.
 Belief State Search phù hợp khi không có thông tin quan sát, nhưng chậm hơn do chi phí xử lý cao và không gian trạng thái lớn hơn POS.
 AND-OR Search nhanh nhất nhưng tốn nhiều không gian trạng thái nhất, phù hợp khi trạng thái ban đầu gần mục tiêu, nhưng có thể không hiệu quả trong các trường hợp phức tạp do không thu hẹp nhánh AND.
-##2.5 Nhóm thuật toán tìm kiếm thỏa ràng buộc (Constraint Satisfaction Problem)
+## 2.5 Nhóm thuật toán tìm kiếm thỏa ràng buộc (Constraint Satisfaction Problem)
 Các thành phần chính của bài toán tìm kiếm và giải pháp
 
 Trạng thái ban đầu
@@ -156,7 +156,7 @@ Kết luận:
 Min-Conflicts Search là lựa chọn tốt nhất trong nhóm về không gian trạng thái, với thời gian chạy hợp lý. Nó hiệu quả khi trạng thái ban đầu gần mục tiêu, nhờ khả năng sửa lỗi từng bước.
 Backtracking Search tốn nhiều không gian trạng thái, phù hợp cho không gian tìm kiếm không quá lớn.
 Forward Checking Search hiệu quả về không gian, nhưng thời gian chạy cao do chi phí tính toán lớn. Cần tối ưu chi phí mỗi bước để cạnh tranh hơn, nhưng vẫn là lựa chọn tốt khi ưu tiên giảm không gian tìm kiếm.
-##2.6 Nhóm thuật toán học tăng cường (Reinforcement Learning)
+## 2.6 Nhóm thuật toán học tăng cường (Reinforcement Learning)
 Các thành phần chính của bài toán tìm kiếm và giải pháp
 
 Trạng thái ban đầu
@@ -181,11 +181,11 @@ Q-Learning: Thuật toán sử dụng chiến lược Epsilon-Greedy để cân 
 Kết luận:
 
 Q-Learning có thể là lựu chọn không quá tối ưu cho bài toán 8-Puzzle do môi trường không quá phức tạp. Nó đặc biệt hiệu quả trong các bài toán ra quyết định tuần tự mà không biết trước mô hình môi trường (tức là không biết xác suất chuyển trạng thái hoặc phần thưởng cụ thể).
-#3. Tác giả
+# 3. Tác giả
 Dự án được thực hiện bởi:
-##Sinh Viên: Nguyễn Thị Kim Oanh - 23110372
+## Sinh Viên: Nguyễn Thị Kim Oanh - 23110372
 Dự án này là đồ án cá nhân phục vụ việc học tập, đồng thời nhằm mục đích nghiên cứu và ứng dụng các thuật toán tìm kiếm AI vào bài toán 8-Puzzle, với trọng tâm là tối ưu hóa hiệu suất và trải nghiệm người dùng.
-#4. Tài liệu tham khảo
+# 4. Tài liệu tham khảo
 [1] S. J. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed. Pearson, 2020.
 [2] S. J. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 3rd ed., Pearson, 2016.
 [3] Stanford University. (2020). Reinforcement Learning and Control - CS229, Fall 2020.
