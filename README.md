@@ -7,7 +7,7 @@ Mục tiêu cốt lõi của dự án là xây dựng một chương trình toà
 ## 2.1 Nhóm thuật toán tìm kiếm không có thông tin (Uninformed Search Algorithms)
 Các thành phần chính của bài toán tìm kiếm và giải pháp
 
-Trạng thái ban đầu
+* Trạng thái ban đầu
 Một lưới 3x3 với 8 số từ 1 đến 8 và một ô trống (0), đại diện cho trạng thái khởi đầu của bài toán ([[1 2 3], [0 5 6], [4 7 8]]).
 Trạng thái mục tiêu
 Lưới 3x3 với thứ tự số từ 1 đến 8 và ô trống ở vị trí cuối cùng ([[1 2 3], [4 5 6], [7 8 0]]).
